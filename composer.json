@@ -1,0 +1,26 @@
+{
+  "name": "softbox/behat-build-report",
+  "description": "Generate behat reports grouped by build from Jenkins CI",
+  "authors": [
+    {
+      "name": "Thiago França",
+      "email": "thiagofranca@softbox.com.br"
+    }
+  ],
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Softbox\\BehatBuildReport\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
