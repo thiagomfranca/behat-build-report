@@ -385,11 +385,11 @@ class BehatReportFormatter implements Formatter {
         $this->timer->start();
 
         $dsPath = sprintf("%s/ds", $this->printer->getOutputPath());
-//
-//        if (!is_dir($dsPath)) {
-//            @mkdir($dsPath, '0777', true);
-//            @chmod($dsPath, '0777');
-//        }
+
+       if (!is_dir($dsPath)) {
+           @mkdir($dsPath, '0777', true);
+           @chmod($dsPath, '0777');
+       }
 
         $this->filename = sprintf("%s/%s.html", $dsPath, md5(date('YmdHis') . uniqid()));
 
